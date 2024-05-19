@@ -70,4 +70,6 @@
   }
 .picture{
     border-radius: 100px;
+    border-color: red;
+    border-style: solid;
 }
