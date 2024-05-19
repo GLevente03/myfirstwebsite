@@ -68,7 +68,7 @@
   .tweet-button:active{
     opacity: 0.6;
   }
-img {
+iframe {
     border: 5px solid red;
     border-radius: 100px; 
 }
