@@ -68,3 +68,6 @@
   .tweet-button:active{
     opacity: 0.6;
   }
+.picture{
+    border-radius: 100px;
+}
