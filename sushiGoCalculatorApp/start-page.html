@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiGo Point Calculator</title>
+    <link rel="stylesheet" href="styles/start-page.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="logo-container">
+        <img class="logo-img" src="images/logo.jpeg" alt="SushiGo logo">
+        <p class="app-name">SushiGo Pont<br>Kalkulátor</p>
+    </div>
+    <div class="form-container">
+        <div class="input-bar-container">
+            <input type="text" class="name-input" placeholder="Enter your name">
+            <button class="add-player-bt" onclick="addPlayer()">
+                <span class="material-symbols-outlined">person_add</span>
+                Add Player
+            </button>
+            <button class="delete-player-bt" onclick="deleteSelected()">
+                Delete Selected
+            </button>
+        </div>
+        <div class="name-container">
+        </div>
+        <button class="lets-play-bt" onclick="redirectToGamePage()">
+            <span class="material-symbols-outlined" style="font-size: 35px;">play_arrow</span>
+            Let's play!
+        </button>
+        <div class="error-msg-container">
+            <span class="material-symbols-outlined">error</span>
+            <p class="error-msg"></p>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/Player.js"></script>
+</body>
+</html>
