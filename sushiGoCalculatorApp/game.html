@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.jpg" alt="SushiGo logo">
+            <p class="app-name">SushiGo Pont<br>Kalkulátor</p>
+        </div>
+        <div class="players-container"></div>
+        <div class="cards-container">
+            <div class="card">
+                <img src="images/tojas_nigiri.jpg" alt="Tojás nigiri">
+                <input type="number" class="point-input" id="tojas_nigiri">
+            </div>
+            <div class="card">
+                <img src="images/lazac_nigiri.jpg" alt="Lazac nigiri">
+                <input type="number" class="point-input" id="lazac_nigiri">
+            </div>
+            <div class="card">
+                <img src="images/polip_nigiri.jpg" alt="Polip nigiri">
+                <input type="number" class="point-input" id="polip_nigiri">
+            </div>
+            <div class="card">
+                <img src="images/tempura.jpg" alt="Tempura">
+                <input type="number" class="point-input" id="tempura">
+            </div>
+            <div class="card">
+                <img src="images/gozgomboc.jpg" alt="Gőzgombóc">
+                <input type="number" class="point-input" id="gozgomboc">
+            </div>
+            <div class="wasabi-card">
+                <img src="images/wasabi.jpg" alt="Wasabi">
+                <div class="nigiris-container">
+                    <div class="nigiri-wasabi-input">
+                        <img src="images/tojas_nigiri.jpg" alt="Tojás nigiri">
+                        <input type="number" class="point-input" id="wasabi-tojas-nigiri">
+                    </div>
+                    <div class="nigiri-wasabi-input">
+                        <img src="images/lazac_nigiri.jpg" alt="Lazac nigiri">
+                        <input type="number" class="point-input" id="wasabi-lazac-nigiri">
+                    </div>
+                    <div class="nigiri-wasabi-input">
+                        <img src="images/polip_nigiri.jpg" alt="Polip nigiri">
+                        <input type="number" class="point-input" id="wasabi-polip-nigiri">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/puding.jpg" alt="Puding">
+                <input type="number" class="point-input" id="puding">
+            </div>
+            <div class="card">
+                <img src="images/sashimi.jpg" alt="Sashimi">
+                <input type="number" class="point-input" id="sashimi">
+            </div>
+            <div class="card">
+                <img src="images/maki_1.jpg" alt="Egy maki tekercs">
+                <input type="number" class="point-input" id="maki_1">
+            </div>
+            <div class="card">
+                <img src="images/maki_2.jpg" alt="Két maki tekercs">
+                <input type="number" class="point-input" id="maki_2">
+            </div>
+            <div class="card">
+                <img src="images/maki_3.jpg" alt="Három maki tekercs">
+                <input type="number" class="point-input" id="maki_3">
+            </div>
+            <div class="buttons-conainer">
+                <div class="save-btn-container">
+                    <button onclick="savePoints()">Mentés</button>
+                </div>
+                <div class="resetPoints-btn-container">
+                    <button onclick="resetPoints()">Pontok nullázása</button>
+                </div>
+                <div class="resetMK-btn-container">
+                    <button onclick="resetMakiRolls()">Makik nullázása</button>
+                </div>
+                <div class="finishRound-btn-container">
+                    <button onclick="finishRound()">Kör vége</button>
+                </div>
+                <div class="resetPuddings-btn">
+                    <button onclick="resetPuddings()">Pudingok nullázása</button>
+                </div>
+                <div class="finishRound-btn">
+                    <button onclick="finishGame()">Játék vége</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="err-msg-container">
+        <div class="triangle"></div>
+        <p class="error-msg"></p>
+    </div>
+    <script src="scripts/Player.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
